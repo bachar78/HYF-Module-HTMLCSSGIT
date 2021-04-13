@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+@mixin dimensions($width, $margen) {
+    width: $width;
+    margin: $margen;
+}
+
+@mixin flex($justify, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin border {
+    border-left: 1px solid rgba(0,0,0,.3);
+    border-right: 1px solid rgba(0,0,0,.3);
+}
+
+@mixin grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 8vh 3vh;
+grid-template-areas: "logo contacts updates"
+                      "logo copy updates";
+}
+
+
+@import "header";
+@import "asideLeft";
+@import "asideRight";
+@import "footer";
+@import "social_media";
+
+
+
+
