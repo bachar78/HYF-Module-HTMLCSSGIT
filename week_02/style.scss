@@ -1,6 +1,4 @@
 /*general settings*/
-$blue: #0d5eaf;
-$white: #ffffff;
 
 @import "stylesheets/header";
 @import "stylesheets/second-page";
@@ -9,11 +7,7 @@ $white: #ffffff;
 @import "stylesheets/fifth-page";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
 
-@mixin backgr-title {
-    display: flex;
-    flex-direction: column;
-    background-color: #0D5EAF;
-}
+
 
 /*Add fonts to the header locally*/
 @font-face {
@@ -86,9 +80,9 @@ body {
 
     /*The flex grids*/ 
     .grid-flex .grid-item {
-        flex: 1 1 35rem;
+        flex: 1 1 30rem;
         &:nth-of-type(-n+2) {
-            flex: 1 1 60rem;
+            flex: 1 1 50rem;
             overflow: hidden;
             &::after {
                 content: "New";
