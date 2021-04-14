@@ -80,9 +80,9 @@ body {
 
     /*The flex grids*/ 
     .grid-flex .grid-item {
-        flex: 1 1 30rem;
+        flex: 1 1 33rem;
         &:nth-of-type(-n+2) {
-            flex: 1 1 50rem;
+            flex: 1 1 52rem;
             overflow: hidden;
             &::after {
                 content: "New";
