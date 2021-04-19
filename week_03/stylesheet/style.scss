@@ -1,8 +1,25 @@
 
 @import "general-setting";
 @import "heading"; 
+@import "landing-section";
 @import "section-1";
 @import "section-2";
 @import "footer"; 
 @import "medi-responsive";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    // background-color: #f1f3fe;
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
