@@ -1,8 +1,9 @@
 .header {
     background-color: #ffffff;
-    min-height: 100vh;
+    min-height: 90vh;
     position: relative;
     overflow: hidden;
+    padding-bottom: 4rem;
     
     &__paragraph {
         width: 45rem;
@@ -13,8 +14,8 @@
         background-color:#6400e4;
         font-weight: bold;
         z-index: 5;
-        top: 36rem;
-        left: 30.5rem;
+        top: 35.5rem;
+        left: 29.5rem;
     }
 
     &__triangle {
@@ -25,20 +26,30 @@
        border-bottom-color: #64edbf;
        border-right-color: transparent;
        border-top-color: transparent;
-       top: 51rem;
-       left: 32.5rem;
+       top: 51.5rem;
+       left: 33.5rem;
     }
+    
+    &__base {
+        position: absolute;
+        width: 250%;
+        left: -190rem;
+        top: 10rem;
+        z-index: 0;
+    }
+
     .header__nav {
         min-height: 10vh;
         max-width: 65%;
-        margin: -.8rem auto;
+        margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: rgb(16, 22, 47);
         margin-top: -.7rem;
         font-size: 1.5rem;
-
+        
+        
         &__login {
             
             a {
