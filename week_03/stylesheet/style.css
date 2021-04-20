@@ -591,10 +591,10 @@
 }
 
 .section-2__title--part {
-  width: 45%;
+  width: 50%;
   margin: auto;
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   line-height: 1.1;
   margin-bottom: 3rem;
 }
@@ -614,8 +614,8 @@
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[3];
-      grid-template-columns: repeat(3, auto);
+  -ms-grid-columns: (minmax(30rem, 30%))[3];
+      grid-template-columns: repeat(3, minmax(30rem, 30%));
   grid-gap: 0rem 8rem;
   list-style: none;
 }
@@ -628,16 +628,25 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.section-2__item__titlediv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 12rem;
+  border-bottom: 3px solid white;
 }
 
 .section-2__item__title {
   font-size: 3.5rem;
   text-align: center;
-  padding-bottom: 2rem;
-  border-bottom: 3px solid white;
 }
 
 .section-2__item__paragraph {
@@ -647,19 +656,38 @@
 }
 
 .section-2__list2 {
-  width: 50%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1.5rem 0rem 2rem 1.5rem;
+  margin: 1.5rem 0rem 2rem 2rem;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.section-2__list2--yellow, .section-2__list2--green, .section-2__list2--purple {
+  padding-right: 3rem;
+}
+
+.section-2__list2--yellow::marker {
+  color: #ffd500;
+  font-size: 2rem;
+}
+
+.section-2__list2--green::marker {
+  color: #6aebc0;
+  font-size: 2rem;
+}
+
+.section-2__list2--purple::marker {
+  color: #6400e4;
+  font-size: 2rem;
 }
 
 .section-2__3pointsImg {

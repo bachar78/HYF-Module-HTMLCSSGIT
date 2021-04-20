@@ -19,13 +19,14 @@
         color: white;
       
         &--part {
-            width: 45%;
+            width: 50%;
             margin: auto;
             text-align: center;
-            font-size: 3.2rem;
+            font-size: 3.6rem;
             line-height: 1.1;
             margin-bottom: 3rem;
         }
+
         &__green {
                 color: #6aebc0;
             }
@@ -40,7 +41,7 @@
         width: 65%;
         margin: auto;
         display: grid;
-        grid-template-columns: repeat(3,auto);
+        grid-template-columns: repeat(3,minmax(30rem, 30%));
         grid-gap: 0rem 8rem;
         list-style: none;
 
@@ -49,14 +50,23 @@
     &__item {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
         // align-items: center;
+
+        &__titlediv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 12rem;
+            border-bottom: 3px solid white;
+        }
 
         &__title {
             font-size: 3.5rem;
             text-align: center;
-            padding-bottom: 2rem;
-            border-bottom: 3px solid white;
+            // padding-bottom: 2rem;
+           
+            
         }
 
         &__paragraph {
@@ -68,13 +78,34 @@
 
 
     &__list2 {
-        width: 50%;
+        width: 60%;
         display: flex;
-        justify-content:space-between;
+        justify-content:flex-start;
         align-items: center;
-        margin: 1.5rem 0rem 2rem 1.5rem;
+        margin: 1.5rem 0rem 2rem 2rem;
         font-size: 1.5rem;   
         font-weight: 700;
+
+        &--yellow, 
+        &--green, 
+        &--purple {
+            padding-right: 3rem;
+        }
+
+        &--yellow::marker {
+            color: #ffd500;
+            font-size: 2rem;
+            }
+
+        &--green::marker {
+            color: #6aebc0;
+            font-size: 2rem;
+            }
+
+        &--purple::marker {
+            color: #6400e4;
+            font-size: 2rem;
+            }
         }
 
         &__3pointsImg {
