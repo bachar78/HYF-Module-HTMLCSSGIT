@@ -137,9 +137,9 @@
             justify-content: center;
             background: #eff2ff;
             border-radius: 100%;
-            box-shadow: inset 0 0 5px rgba(0, 0, 0, .2), 0 0 7px #fff;
-            height: 8.6rem;
-            width: 8.5%;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, .1), 0 0 7px #fff;
+            height: 9rem;
+            width: 9%;
             position: relative;
 
             &__counter {
@@ -155,7 +155,7 @@
                 content: " ";
                 background: #ffffff;
                 border-radius: 100%;
-                box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+                box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
                 height: 70%;
                 position: absolute;
                 width: 70%;

@@ -1,0 +1,18 @@
+.footer {
+    min-height: 10vh;
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    color:#141c3a;
+
+    &__left__link {
+        text-decoration: none;
+        color: #141c3a;
+        &:hover {
+            color: #6400e4;
+        }
+    }
+}
