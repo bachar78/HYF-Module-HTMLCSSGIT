@@ -1,0 +1,92 @@
+.section-2 {
+    min-height: 100vh;
+    background-image: url(../images/sec2-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #141c3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &__title {
+        min-height: 40vh;
+        // background: chartreuse;
+        width: 65%;
+        margin: 12rem auto 0;
+        color: white;
+      
+        &--part {
+            width: 45%;
+            margin: auto;
+            text-align: center;
+            font-size: 3.2rem;
+            line-height: 1.1;
+            margin-bottom: 3rem;
+        }
+        &__green {
+                color: #6aebc0;
+            }
+        &__yellow {
+                color: #ffd500;
+        }
+    }
+
+    &__list {
+        min-height: 40vh;
+        color: white;
+        width: 65%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 0rem 8rem;
+        list-style: none;
+
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+
+        &__title {
+            font-size: 3.5rem;
+            text-align: center;
+            padding-bottom: 2rem;
+            border-bottom: 3px solid white;
+        }
+
+        &__paragraph {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 2;
+        }
+    }
+
+
+    &__list2 {
+        width: 50%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        margin: 1.5rem 0rem 2rem 1.5rem;
+        font-size: 1.5rem;   
+        font-weight: 700;
+        }
+
+        &__3pointsImg {
+            position: absolute;
+            top: 4rem;
+            left: 32rem;
+        }
+    }
+
+
+
+
+
+    
+
