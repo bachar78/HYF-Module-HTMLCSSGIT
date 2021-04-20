@@ -39,6 +39,7 @@
         flex-direction: column;
         justify-content:center;
         align-items: center;
+        min-height: 40vh;
         flex-grow: 12;
 
         h1 {
@@ -74,10 +75,7 @@
     }
 
     &__image {
-        flex-grow: 2;
-        // flex-basis: 60rem;
         background-color: black;
-
         img {
             width: 130%;
             

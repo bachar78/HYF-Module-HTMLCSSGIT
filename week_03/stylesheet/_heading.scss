@@ -14,7 +14,7 @@
         background-color:#6400e4;
         font-weight: bold;
         z-index: 5;
-        top: 35.5rem;
+        top: 36.5rem;
         left: 29.5rem;
     }
 
@@ -26,8 +26,8 @@
        border-bottom-color: #64edbf;
        border-right-color: transparent;
        border-top-color: transparent;
-       top: 51.5rem;
-       left: 33.5rem;
+       top: 50.5rem;
+       left: 31.5rem;
     }
     
     &__base {
@@ -40,7 +40,7 @@
 
     .header__nav {
         min-height: 10vh;
-        max-width: 65%;
+        width: 65%;
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -116,3 +116,4 @@
         }
     }
 }
+

@@ -16,7 +16,7 @@
   background-color: #6400e4;
   font-weight: bold;
   z-index: 5;
-  top: 35.5rem;
+  top: 36.5rem;
   left: 29.5rem;
 }
 
@@ -28,8 +28,8 @@
   border-bottom-color: #64edbf;
   border-right-color: transparent;
   border-top-color: transparent;
-  top: 51.5rem;
-  left: 33.5rem;
+  top: 50.5rem;
+  left: 31.5rem;
 }
 
 .header__base {
@@ -42,7 +42,7 @@
 
 .header .header__nav {
   min-height: 10vh;
-  max-width: 65%;
+  width: 65%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,7 +152,7 @@
           flex-grow: 2;
 }
 
-.landing-section .landing-section__left__girl {
+.landing-section__left__girl {
   position: absolute;
   width: 74%;
   right: 12rem;
@@ -160,7 +160,7 @@
   z-index: 1;
 }
 
-.landing-section .landing-section__left__homburger {
+.landing-section__left__homburger {
   position: absolute;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -170,7 +170,7 @@
   width: 11%;
 }
 
-.landing-section .landing-section__left__points {
+.landing-section__left__points {
   position: absolute;
   width: 13%;
   top: -34rem;
@@ -178,12 +178,12 @@
   z-index: 4;
 }
 
-.landing-section .landing-section__left__rectangle {
+.landing-section__left__rectangle {
   background-color: #ff8ff5;
   position: absolute;
   z-index: 0;
   width: 23rem;
-  height: 50rem;
+  height: 23rem;
   top: -34rem;
   left: 31rem;
 }
@@ -207,6 +207,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0rem 2rem 14rem 2rem;
+  z-index: 99;
 }
 
 .landing-section__right__form {
@@ -264,12 +265,12 @@
   text-align: left;
   width: 40rem;
   color: #141c3a;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .landing-section__right__list {
   list-style: none;
-  width: 40rem;
+  width: 38rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,7 +284,7 @@
 
 .landing-section__right__item {
   border: 2px solid #f6f5fa;
-  padding: 1rem 3rem;
+  padding: 1rem 3.2rem;
   margin-bottom: .5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,6 +361,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 40vh;
   -webkit-box-flex: 12;
       -ms-flex-positive: 12;
           flex-grow: 12;
@@ -398,9 +400,6 @@
 }
 
 .section-1__image {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
   background-color: black;
 }
 
@@ -651,13 +650,13 @@
 }
 
 .section-2__item__paragraph {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: 2;
 }
 
 .section-2__list2 {
-  width: 60%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -745,5 +744,106 @@ html {
 body {
   background: #f1f3fe;
   font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  html {
+    font-size: 58%;
+  }
+  .header {
+    min-height: 115vh;
+  }
+  .header__paragraph {
+    width: 37rem;
+    font-size: 3.2rem;
+    top: 44rem;
+    left: 3.5rem;
+  }
+  .header__triangle {
+    top: 37.5rem;
+    left: 7.5rem;
+  }
+  .header__base {
+    left: -103rem;
+    top: 50rem;
+  }
+  .header__nav {
+    min-width: 85%;
+  }
+  .landing-section {
+    min-width: 85%;
+  }
+  .landing-section__left__girl {
+    width: 68%;
+    right: 15.5rem;
+    top: -24.5rem;
+  }
+  .landing-section__left__rectangle {
+    width: 20rem;
+    height: 20rem;
+    top: -31rem;
+    left: 25rem;
+  }
+  .landing-section__left__points {
+    width: 22%;
+    top: -30rem;
+  }
+  .landing-section__left__homburger {
+    width: 14%;
+    top: -23rem;
+    left: 1rem;
+  }
+  .landing-section__right {
+    margin: 0rem 0rem 2rem 2rem;
+  }
+  .section-1__above {
+    width: 85%;
+  }
+  .section-1__shadow {
+    display: none;
+  }
+  .section-1__paragraph {
+    padding: 5rem;
+  }
+  .section-1__image img {
+    width: 230%;
+  }
+  .container {
+    width: 100%;
+  }
+  .container .heading {
+    width: 90%;
+  }
+  .container__item__circle {
+    height: 9rem;
+    width: 10%;
+  }
+  .section-2 {
+    min-height: 110vh;
+  }
+  .section-2__title {
+    width: 100%;
+  }
+  .section-2__title--part {
+    width: 70%;
+    font-size: 4.5rem;
+  }
+  .section-2__list {
+    width: 90%;
+    -ms-grid-columns: (minmax(20rem, 30%))[3];
+        grid-template-columns: repeat(3, minmax(20rem, 30%));
+  }
+  .section-2__3pointsImg {
+    width: 12%;
+    left: 4rem;
+  }
+  .homburger-section2 {
+    top: 312rem;
+    right: 5rem;
+    width: 10%;
+  }
+  .footer {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

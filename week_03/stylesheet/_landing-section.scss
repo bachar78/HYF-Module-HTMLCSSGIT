@@ -14,18 +14,15 @@
         flex-basis: 50%;
         flex-grow: 2;
  
-    }
-
-    .landing-section__left__girl {
+        &__girl {
             position: absolute;
             width: 74%;
             right: 12rem;
             top: -28.5rem;
             z-index: 1;
         } 
-    
-    
-        .landing-section__left__homburger {
+
+        &__homburger {
             position: absolute;
             // background: transparent;
             transform: rotate(90deg);
@@ -33,10 +30,9 @@
             top: -28rem;
             left: 17rem;
             width: 11%;
-    }
+        }
 
-
-        .landing-section__left__points {
+        &__points {
             position: absolute;
             width: 13%;
             top: -34rem;
@@ -44,15 +40,16 @@
             z-index: 4;
         }
 
-        .landing-section__left__rectangle {
+        &__rectangle {
             background-color: #ff8ff5;
             position: absolute;
             z-index: 0;
             width: 23rem;
-            height: 50rem;
+            height: 23rem;
             top: -34rem;
             left: 31rem;
         }
+    }
 
     &__right {
         flex-grow: 1;
@@ -62,6 +59,7 @@
         justify-content:flex-start;
         align-items: center;
         margin: 0rem 2rem 14rem 2rem;
+        z-index: 99;
 
         &__form {
             width: 40rem;
@@ -120,12 +118,12 @@
             text-align: left;
             width: 40rem;
             color: #141c3a;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
         }
 
         &__list {
             list-style: none;
-            width: 40rem;
+            width: 38rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -133,16 +131,15 @@
 
         &__item {
             border: 2px solid #f6f5fa;
-            padding: 1rem 3rem;
+            padding: 1rem 3.2rem;
             margin-bottom: .5rem;
+            
             display: flex;
             justify-content: center;
             align-items: center;
             transition: box-shadow .3s;
             
             &:hover {
-                    // color: #4b4b4d;
-                    // background-color: #fff;
                     box-shadow: 0 3px 4px rgba(0, 0, 0, .3);
                     border: 2.5px solid #dddce0;
             }
@@ -151,15 +148,3 @@
     }
 }
 
-// .backgrroun-base {
-//     height: 30vh;
-//     width: 100vw;
-// img {
-//     position: absolute;
-//     bottom:-160rem;
-//     left: -150rem;
-//     width: 300%;
-//     vertical-align: middle;
-//     z-index: -1;
-// }   
-// }
