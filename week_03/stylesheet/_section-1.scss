@@ -4,17 +4,36 @@
     width: 100%;
     background: #f1f3fe;
     
-    &__center {
+    &__above {
         width: 65%;
         margin: auto;
+        position: relative;
+        // background: rgb(130, 130, 150);
+    }
+
+    &__shadow {
+        position: absolute;
+        left: .05rem;
+        top: 4.7rem;
+        background-image: url(/images/cross.svg);
+        background-repeat: repeat;
+        height: 90%;
+        width: 100%;
+        filter: invert(89%) sepia(95%) saturate(6854%) 
+        hue-rotate(270deg) brightness(83%) contrast(121%);
+    }
+
+    &__center {
+        width: 97%;
         background: #6400e4;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 45vh;
+        min-height: 40vh;
         overflow: hidden;
+        position: relative;
     } 
-
+    
     &__paragraph {
         display: flex;
         flex-direction: column;
@@ -45,21 +64,23 @@
 
         button {
             background: rgb(255, 213, 0);
-
+            padding: 2rem 4rem;
+            border: 1px solid transparent;
+            font-size: 1.6rem;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 50px;
         }
     }
 
     &__image {
         flex-grow: 2;
         // flex-basis: 60rem;
+        background-color: black;
 
         img {
-            width: 140%;
-        }
-        &::after {
+            width: 130%;
             
         }
     }
-
-
 }  
