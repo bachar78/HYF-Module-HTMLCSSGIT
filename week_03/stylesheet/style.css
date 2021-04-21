@@ -322,7 +322,7 @@
   position: absolute;
   left: .05rem;
   top: 4.7rem;
-  background-image: url(/images/cross.svg);
+  background-image: url(../images/cross.svg);
   background-repeat: repeat;
   height: 90%;
   width: 100%;
