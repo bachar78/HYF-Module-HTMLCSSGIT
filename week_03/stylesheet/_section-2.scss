@@ -42,7 +42,7 @@
         width: 65%;
         margin: auto;
         display: grid;
-        grid-template-columns: repeat(3,minmax(30rem, 30%));
+        grid-template-columns: repeat(autofit,minmax(30rem, 1fr));
         grid-gap: 0rem 8rem;
         list-style: none;
 
@@ -51,9 +51,7 @@
     &__item {
         display: flex;
         flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-
+        
         &__titlediv {
             display: flex;
             justify-content: center;
@@ -64,10 +62,7 @@
 
         &__title {
             font-size: 3.5rem;
-            text-align: center;
-            // padding-bottom: 2rem;
-           
-            
+            text-align: center; 
         }
 
         &__paragraph {

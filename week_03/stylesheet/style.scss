@@ -66,6 +66,7 @@ body {
                 height: 20rem;
                 top: -31rem;
                 left: 25rem;
+                z-index: -1;
             }
 
             &__points {
@@ -135,7 +136,7 @@ body {
 
         &__list {
             width: 90%;
-            grid-template-columns: repeat(3,minmax(20rem, 30%));
+            grid-template-columns: repeat(autofit,minmax(20rem, 1fr));
         }
 
         &__3pointsImg {
@@ -153,4 +154,218 @@ body {
     .footer {
     width: 90%;
     }
+}
+
+@media (max-width: 767px ) {
+    
+    
+    html {
+       font-size: 38%; 
+    }
+
+    .header {
+        background-color: #ffffff;
+        &__triangle, 
+        &__base {
+            display: none;
+        }
+
+        .header__nav {
+            margin-top: 2rem;
+            z-index: 0;
+        }
+
+        .header__nav__li {
+            display: none;
+        }
+
+        &__paragraph {
+            width: 100%;
+            position: relative;
+            left: 0;
+            top: 2rem;
+            background: transparent;
+            color: black;
+            text-align: center;
+            font-size: 3.5rem;
+            z-index: 0;
+        }
+    }
+
+    .landing-section {
+        width: 100%;
+
+        &__left {
+            display: none;
+            }
+
+        &__right {
+                width: 100%;
+                // margin-top: 4rem;
+
+                &__form {
+                    width: 100%;
+                    margin: 6rem 0;
+
+                }
+
+                form {
+                    width: 100%;
+                    h2 {
+                        display: none;
+                    }
+                    input {
+                        width: 100%;
+                        padding: 3rem 0;
+                    }
+                    button {
+                        width: 100%;
+                        padding: 3.5rem;
+                    }
+                }
+
+                p {
+                    font-size: 2rem;
+                    width: 100%;
+                    font-size: 2.2rem;
+                    line-height: normal;
+                    margin: 1rem;
+                    br {
+                        display: none;
+                    }
+                }
+
+                h2 {
+                    font-size: 2.8rem;
+                    padding-bottom: 1rem;
+                }
+                &__list {
+                    width: 100%;
+                }
+            }
+        }
+
+.section-1 {
+    &__above {
+        width: 100%;
+    }
+
+     &__shadow,
+     &__image {
+        display: none;
+    }
+
+    &__paragraph {
+        height: 100vh;
+        justify-content:space-evenly;
+        h1 {
+            font-size: 6rem;
+            width: 80%;
+        }
+
+        p {
+            font-size: 3.5rem;
+        }
+
+        button {
+            padding: 4rem 10rem;
+            font-size: 3rem;
+        }
+    }
+}
+
+
+.container {
+    width: 100%;
+
+.heading {
+    width: 90%;
+}
+
+&__list {
+    width: 100%;
+}
+
+&__item {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 60vh;
+
+    &::after {
+        display: none;
+    }
+
+    &__circle {
+        height: 16rem;
+        width: 30%;
+
+       &__counter {
+            font-size: 5rem;
+            }
+        }
+
+        &__image {
+            width: 100%;
+            order: 3;
+        }
+
+        &__content {
+            width: 95%;
+            align-items: center;
+            margin: 4rem 0;
+            &__subHeading {
+                font-size: 4rem;
+                padding: 0rem 2rem;
+            }
+            &__description {
+                font-size: 2.4rem;
+            }
+        }
+    }
+}
+
+.section-2 {
+    &__title {
+        width: 100%;
+
+        &--part {
+            width: 70%;
+            line-height: 1.5;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__list {
+        grid-gap: 4rem;
+    }
+
+    &__item {
+        width: 100%;
+
+        &__title {
+            font-size: 4rem;
+        }
+
+        &__paragraph {
+            font-size: 2.4rem;
+        }
+    }
+    &__list2 {
+        font-size: 1.8rem;
+    }
+}
+
+.homburger-section2 {
+    top: 4rem;
+    right: 4rem;
+    transform: rotate(90deg);
+}
+.footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
 }

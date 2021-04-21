@@ -7,7 +7,7 @@
     justify-content:space-evenly;
     align-items: center;
     position: relative;
-    // padding: .5rem;
+    // flex-wrap: wrap;
 
     &__left {
         position: relative;
@@ -44,7 +44,7 @@
             background-color: #ff8ff5;
             position: absolute;
             z-index: 0;
-            width: 23rem;
+            width: 32%;
             height: 23rem;
             top: -34rem;
             left: 31rem;
@@ -67,7 +67,7 @@
         }
 
         form {
-            h2{
+            h2 {
                 font-size: 2.2rem;
                 width: 100%;
                 margin: 0rem 0;
