@@ -11,6 +11,8 @@ body {
 
 header {
   min-height: 10vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border-left: 1px solid rgba(0, 0, 0, 0.3);
   border-right: 1px solid rgba(0, 0, 0, 0.3);
   width: 90%;
@@ -36,9 +38,9 @@ header {
 }
 
 header .header {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 25%;
-          flex: 1 1 25%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
 }
 
 header .header h1 {
@@ -55,9 +57,9 @@ header .header h1 span {
 }
 
 header .slide {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 25%;
-          flex: 1 1 25%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
   min-height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -604,5 +606,38 @@ footer .footer__copyright {
 
 .social-media i:first-of-type {
   margin-top: 2rem;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+  header {
+    width: 100%;
+  }
+  header .header h1 {
+    letter-spacing: normal;
+    font-size: 2.4rem;
+  }
+  .main-contaniner {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-contaniner .about {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+    margin: 2rem;
+  }
+  .time-line ul {
+    width: 38%;
+  }
+  .time-line ul .date::before {
+    text-align: left;
+  }
+  .footer {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
