@@ -614,10 +614,14 @@ footer .footer__copyright {
   }
   header {
     width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   header .header h1 {
     letter-spacing: normal;
     font-size: 2.4rem;
+    margin-left: .5rem;
   }
   .main-contaniner {
     width: 100%;
