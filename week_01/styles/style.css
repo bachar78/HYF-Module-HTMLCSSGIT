@@ -684,6 +684,10 @@ footer .footer__copyright {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .main-contaniner .about .about-education fieldset li::after {
+    top: 2.5rem;
+    right: 1.5rem;
+  }
   .main-contaniner .aside-right .time-line ul {
     width: 90%;
   }
